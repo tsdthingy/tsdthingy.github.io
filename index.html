@@ -87,6 +87,25 @@
             margin-top: 3rem;
             margin-bottom: 3rem;
         }
+        
+        .embed-container {
+		  position: relative;
+		  padding: 56.25% 0 0 0;
+		  height: 0;
+		  overflow: hidden;
+		  max-width: 100%;
+		  height: auto;
+		}
+		
+		.embed-container iframe,
+		.embed-container object,
+		.embed-container embed {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		}
 
         footer {
             background: rgb(115, 153, 153);
@@ -120,7 +139,10 @@
         <h1 class="title">Touchy Spacey Data Thingy</h1>
         <h4>Winner of the Spaced-Out Music Challenge at MTF Stockholm 2018, sponsored by SNSA and ESA</h4>
         <h5>A collaboration between Gawain Hewitt, Sabina Barcucci, Johnnie Hård, Luis Zayas and Malin Arvidsson</h5>
-        <div class="images" style="padding:56.25% 0 0 0;position:relative;height:0;height:auto;"><iframe src="https://player.vimeo.com/video/289352295?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;max-height:500px;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div class='embed-container'>
+  <iframe src="https://player.vimeo.com/video/289352295?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
         <p>The TouchySpaceyDataThingy is a device for the sonification of data. Designed to provide a visceral
             interaction to compare data sets, it then presents them as an intuitive graphic interface and a musical instrument.
             While the instrument could be used to sonify any data, for this project we have specifically worked with satellite
